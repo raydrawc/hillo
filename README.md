@@ -23,10 +23,7 @@ conf{{file}}
 
 subgraph main
     user --> portal--> syncDB --> client 
-    subgraph save
         portal --> saveDB
-        saveDB --> portal
-    end
 end
 
 subgraph plugin
